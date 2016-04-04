@@ -30,3 +30,6 @@ WORKDIR /heka
 EXPOSE 4352
 
 COPY . /heka
+
+RUN source build.sh && \
+    make install 
